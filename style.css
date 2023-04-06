@@ -1,13 +1,77 @@
-
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #333;
-    height: 600px;
-    width: 500px;
+    margin: 18em;
+    
 }
 
-.mainContainer {
-    
+#mainContainer {
+    background-color: rgb(222, 221, 219);
+    border: 10px solid rgba(47,47,47,1);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(100px, auto) repeat(5, 80px);
+    gap: 1px;
+    padding: 1px;
+}
+#display {
+    grid-column: 1 / -1;
+    background-color: #b2b9b7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 5px;
+    font-size: 5em;
+    font-weight: initial;
+    text-shadow: 1.3px 1.3px #383838;
+    margin: 5px;
+    border-radius: 20px;
+}
+#zero {
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-radius: 50px;
+    font-size: 2.5em;
+}
+.decimal {
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-color: #1C1C1C;
+    color: white;
+    border-radius: 50px;
+    font-size: 2.5em;
+}
+button:active {
+    background-color: #f5f5f5;
+}
+.operator {
+    grid-column-start: 4;
+    border-radius: 50px;
+    font-size: 2.5em;
+}
+
+.operator {
+    background-color: #FF9500;
+    color: white;
+    border-radius: 50px;
+    font-size: 2.5em;
+}
+.clear, .sign, .percent {
+    background-color: #D4D4D2;
+    color: black;
+    border-radius: 50px;
+    font-size: 2.5em;
+}
+.operand {
+    background-color: #1C1C1C;
+    color: white;
+    border-radius: 50px;
+    font-size: 2.5em;
 }
