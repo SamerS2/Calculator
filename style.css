@@ -38,7 +38,13 @@ main {
     border-radius: 50px;
     font-size: 2.5em;
 }
-.decimal {
+#equals {
+    background-color: #FF9500;
+    color: white;
+    border-radius: 50px;
+    font-size: 2.5em;
+}
+#decimal {
     grid-row-start: 6;
     grid-row-end: 7;
     grid-column-start: 3;
@@ -52,18 +58,15 @@ button:active {
     background-color: #f5f5f5;
 }
 .operator {
-    grid-column-start: 4;
-    border-radius: 50px;
-    font-size: 2.5em;
-}
-
-.operator {
     background-color: #FF9500;
     color: white;
     border-radius: 50px;
     font-size: 2.5em;
+    grid-column-start: 4;
+    border-radius: 50px;
+    font-size: 2.5em;
 }
-.clear, .sign, .percent {
+#clear, #sign, #percent {
     background-color: #D4D4D2;
     color: black;
     border-radius: 50px;
